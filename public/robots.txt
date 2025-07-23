@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goodhelper.com.sg/sitemap.xml
