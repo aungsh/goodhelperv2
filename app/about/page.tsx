@@ -9,10 +9,10 @@ export default function About() {
         We serve with purpose
       </div>
 
-      <div className="max-w-4xl space-y-6 text-lg leading-relaxed">
+      <div className="max-w-4xl space-y-6 text-2xl leading-relaxed font-medium">
         <p className="text-balance">
           Welcome to{" "}
-          <span className="font-semibold text-emerald-600">GoodHelper</span>, a
+          <span className="font-bold text-emerald-600">GoodHelper</span>, a
           modern domestic helper agency based in Singapore. We are dedicated to
           connecting families with trusted, professional helpers who make daily
           life easier and more enjoyable. Our mission is to provide reliable

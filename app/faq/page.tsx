@@ -10,7 +10,7 @@ export default function Faq() {
   return (
     <>
       <h1 className="text-8xl font-bold mt-38">FAQs</h1>
-      <div className="flex items-center gap-2 text-lg font-bold text-gray-800">
+      <div className="flex items-center gap-2 text-lg font-bold text-gray-500">
         <BookText />
         <span>Updated July 2025</span>
       </div>
@@ -83,6 +83,9 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      <div className="flex items-center gap-2 text-lg font-bold text-gray-500">
+        Have more questions? Feel free to contact us.
+      </div>
     </>
   );
 }

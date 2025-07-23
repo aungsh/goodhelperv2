@@ -1,8 +1,10 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { ArrowRightIcon } from "lucide-react";
 
 export default function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,10 +18,14 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const whatsappMessage = encodeURIComponent(
+    "Hello Goodhelper! I would like to find out more on hiring a good and trained helper in Singapore!"
+  );
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50 p-4 flex justify-center">
       <Card
-        className={`transition-all duration-300 w-full max-w-sm flex items-center px-6 py-8 ${
+        className={`transition-all duration-300 w-full max-w-md flex items-center px-6 py-8 ${
           isScrolled
             ? "backdrop-blur-md bg-white/20 border-white/30 shadow-lg"
             : "bg-transparent border-transparent shadow-none"
@@ -36,7 +42,10 @@ export default function Nav() {
             <Link href="/about" className="hover:underline text-xl font-bold">
               About
             </Link>
-            <Link href="/contact" className="hover:underline text-xl font-bold">
+            <Link
+              href={`https://wa.me/6584775088?text=${whatsappMessage}`}
+              className="hover:underline text-xl font-bold"
+            >
               Contact
             </Link>
           </nav>
