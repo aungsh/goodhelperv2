@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BookText, Github } from "lucide-react";
+import { BookText } from "lucide-react";
 
 export default function Faq() {
   return (

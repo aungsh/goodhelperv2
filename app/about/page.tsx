@@ -1,4 +1,4 @@
-import { Github, Heart, Users, Eye } from "lucide-react";
+import { Heart } from "lucide-react";
 
 export default function About() {
   return (
