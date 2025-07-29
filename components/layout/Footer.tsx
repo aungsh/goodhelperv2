@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,11 +19,25 @@ export default function Footer() {
             <Github size={20} className="text-stone-600" />
           </a>
           <a
-            href="https://www.linkedin.com/in/aung-swan-htat-bb425a1a9/"
+            href=""
             className="w-12 h-12 bg-stone-200 rounded-full flex items-center justify-center hover:bg-stone-400 transition-colors"
             aria-label="View our LinkedIn"
           >
             <Linkedin size={20} className="text-stone-600" />
+          </a>
+          <a
+            href=""
+            className="w-12 h-12 bg-stone-200 rounded-full flex items-center justify-center hover:bg-stone-400 transition-colors"
+            aria-label="View our Facebook"
+          >
+            <Facebook size={20} className="text-stone-600" />
+          </a>
+          <a
+            href=""
+            className="w-12 h-12 bg-stone-200 rounded-full flex items-center justify-center hover:bg-stone-400 transition-colors"
+            aria-label="View our Instagram"
+          >
+            <Instagram size={20} className="text-stone-600" />
           </a>
         </div>
       </div>

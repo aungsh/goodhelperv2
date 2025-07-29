@@ -1,11 +1,15 @@
 import Hero from "./_components/Hero";
+import Manifesto from "./_components/Manifesto";
 import Services from "./_components/Services";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Services />
+      <div>
+        <Hero />
+        <Manifesto />
+        <Services />
+      </div>
     </>
   );
 }

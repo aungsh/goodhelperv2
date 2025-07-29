@@ -7,10 +7,13 @@ import { MdCleaningServices } from "react-icons/md";
 import { PiChalkboardTeacherDuotone } from "react-icons/pi";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { ArrowRightIcon } from "lucide-react";
 
 const services = [
   {
-    icon: <MdElderlyWoman className="text-7xl sm:text-8xl text-primary mb-2" />,
+    icon: (
+      <MdElderlyWoman className="text-7xl sm:text-8xl text-primary mb-2 hover:animate-wiggle" />
+    ),
     label: "Elderly Care",
   },
   {
@@ -33,6 +36,7 @@ const services = [
     icon: (
       <MdCleaningServices className="text-7xl sm:text-8xl text-primary mb-2" />
     ),
+
     label: "Cleaning Services",
   },
   {
@@ -67,6 +71,14 @@ export default function Services() {
           );
         })}
       </div>
+      <Button
+        className="mt-20 py-6 text-lg text-emerald-100 rounded-2xl shadow-xl"
+        effect="expandIcon"
+        icon={ArrowRightIcon}
+        iconPlacement="right"
+      >
+        Tell me more!
+      </Button>
     </section>
   );
 }
