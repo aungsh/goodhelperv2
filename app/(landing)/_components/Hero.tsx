@@ -36,7 +36,7 @@ export default function Hero() {
 
       {/* Subtitle */}
       <div className="text-center">
-        <p className="text-xl italic">je t'aime,</p>
+        <p className="text-xl italic">je t&apos;aime,</p>
         <p className="text-xl italic">maman (esz)</p>
       </div>
 
